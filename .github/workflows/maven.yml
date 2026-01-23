@@ -128,7 +128,7 @@ jobs:
               with:
                   context: '{{defaultContext}}:back'
                   push: true
-                  tags: thegreattoad/bobapp/back:latest
+                  tags: thegreattoad/bobapp-back:latest
 
     docker-front-push:
         name: Build and Push Front Docker Image
@@ -152,4 +152,4 @@ jobs:
               with:
                   context: '{{defaultContext}}:front'
                   push: true
-                  tags: thegreattoad/bobapp/front:latest
+                  tags: thegreattoad/bobapp-front:latest
