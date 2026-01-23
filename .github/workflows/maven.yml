@@ -36,6 +36,7 @@ jobs:
                   path: |
                       back/target/site/jacoco/
                       back/target/surefire-reports/
+                      back/target/classes/
 
     # Job pour le front-end Angular
     test-frontend:
