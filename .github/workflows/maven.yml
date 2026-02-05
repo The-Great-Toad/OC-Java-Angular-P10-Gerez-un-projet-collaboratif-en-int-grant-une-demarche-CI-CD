@@ -25,9 +25,6 @@ jobs:
             - name: Build and run tests with Maven
               run: cd back && mvn clean verify
 
-            - name: Generate JaCoCo coverage report
-              run: cd back && mvn jacoco:report
-
             - name: Upload backend reports
               uses: actions/upload-artifact@v6
               if: always()
